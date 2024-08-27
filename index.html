@@ -2,31 +2,22 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>João Victor Rodrigues | Statistic - Front End Dev</title>
-
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="vendor/bootstrap4/css/bootstrap.min.css">
-
-        <!-- Bootstrap Toggle -->
-        <link href="./vendor/bootstrap-toggle/bootstrap-toggle.min.css" rel="stylesheet">
-
-        <!-- Reset CSS -->
-        <link rel="stylesheet" href="./css/reset.css">
+        <title>João Victor Rodrigues | Statistic - Data Scientist</title>
 
         <!-- Main CSS -->
-        <link rel="stylesheet" href="./css/estilo.css">
+        <link rel="stylesheet" href="./css/style.css">
 
-        <!-- Fontawesome -->
-        <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" data-auto-replace-svg="nest"></script>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
         <!-- Fontes google -->
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Rubik:wght@300;700&display=swap" rel="stylesheet">
         
     </head>
     <body>
-        <header id="header-container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top container">
-                <a class="navbar-brand text-uppercase hvr-underline-from-left" href="index.html">
+        <header class="" id="header-container">
+            <nav class="navbar navbar-expand-lg navbar-dark container">
+                <a class="navbar-brand text-uppercase hvr-underline" href="index.html">
                     <i class="fas fa-terminal"></i> João Victor
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-menu-top" aria-controls="nav-menu-top" aria-expanded="false" aria-label="Alterna navegação">
@@ -34,72 +25,66 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="nav-menu-top">
-                    <ul class="nav navbar-nav ml-auto">
+                    <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link hvr-underline-from-left" href="skills.html">Skills</a>
+                            <a class="nav-link hvr-underline" href="index.html">About me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link hvr-underline-from-left" href="#projetos-section">Projects of study</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link hvr-underline-from-left" href="#contato-section">Contact</a>
+                            <a class="nav-link hvr-underline" href="projects-section.html">Study projects</a>
                         </li>
                     </ul>
+                </div>
+                <div class="d-flex ms-auto" id="contact-me">
+                    <a class="ms-1 col2" title="joaovictor-aragao" href="https://github.com/joaovictor-aragao"><i class="fab fa-github fa-1x"></i></a>
+                    <a class="ms-1 col2" title="joao-victor-estatistico" href="https://www.linkedin.com/in/joao-victor-estatistico/"><i class="fab fa-linkedin-in fa-1x"></i></a>
+                    <a class="ms-1 col2" title="j.victor0205@gmail.com" href="mailto:j.victor0205@gmail.com"><i class="fas fa-at fa-1x"></i></a>
+                    <a class="ms-1 col2" title="+5586994929482" href="https://wa.me/5586994929482"><i class="fab fa-whatsapp fa-1x"></i></a>
                 </div>
             </nav>
         </header>
 
-        <section class="my-1" id="inicio-section">
-            <div class="container my-4 slide-wrapper">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-lg-3">
-                        <div class="img-border zoomIn">
-                            <img src="img/perfil.png" alt="João Victor" class="img-perfil rounded-circle">
-                        </div>
-                    </div>
-                    <div class="col-lg-6 my-auto ml-2 fadeInRight" id="text-inicio">
-                        <h2 class="text-uppercase">João Victor <span class="text-col-2">Rodrigues</span></h2>
-                        <h5 class="my-2">
-                            <span class="txt-rotate" data-period="500" data-rotate='["Statistician.", "Web Developer."]'></span>
-                        </h5>
-                        <p class="text-justify mt-3">
-                            <i class="fas fa-quote-left fa-2x"></i>
-                            <!-- Sou graduado em Estatística pela UFPI e pós-graduando em estatística pela FAVENI, com registro no <a href="http://conre5.org.br/">CONRE 5</a>.
-                            Trabalho com gerenciamento de pesquisas, modelos e testes estatísticos, séries temporais criação de indicadores, algoritmos de inteligência artificial em R e Python.
-                            Como sempre gostei de programar, acabei entrando na área de Desenvolvimento Web (por causa de alguns amigos) percorrendo o caminho do front ao back-end, aprendendo novas tecnologias a cada dia.
-                            Me siga nas redes sociais e vamos ser amigos! -->
-                            I am graduated in Statistics by UFPI and post-graduated in statistics by FAVENI, registered at <a href="http://conre5.org.br/"> CONRE 5</a>.
-                            I work with research management, models and statistical tests, time series, creation of indicators, artificial intelligence algorithms in R and Python.
-                            As I always liked to program, I ended up entering the Web Development area (because of some friends) walking the path from the front to the back-end, learning new technologies at every step.
-                            Follow me on social media and let's be friends!
+        <div id="presentation-section" class="container mt-5">
+            <div class="row d-flex justify-content-center container">
+                <div class="col">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <img src="./img/perfil.png" alt="Me" class="profile-img rounded-circle img-border">
+                        <p class="mb-0 mt-4 col2"> 
+                            Data Scientist | Statistician
                         </p>
-
                     </div>
                 </div>
-                
+                <div class="col-9 my-auto ml-2">
+                    <div class="container">
+                        <h1 class="pt-4 text-bold col2">I'M João Victor Rodrigues <span class="col1">de Aragão</span>,</h1>
+                        <h4>a Data Scientist, based in sunny Piauí, Brazil. </h4>
+                        <h5 class="mt-3">
+                            <i class="col2 fas fa-quote-left fa-2x"></i>
+                            <em class="col2 text-justify" id="welcome-resume">
+                                I hold a degree in Statistics from <a href="https://www.ufpi.br/">UFPI</a> and a postgraduate qualification from <a href="https://faveni.edu.br/">FAVENI</a>, with registration at <a href="http://conre5.org.br/">CONRE 5</a> (Conselho Regional de Estatística). 
+                                My work involves research management, statistical modeling, time series analysis, indicator development, and creating AI algorithms using R and Python. 
+                                My passion for programming led me to transition into Data Science, where I continually learn new technologies. 
+                                Connect with me on social media—let's stay connected!
+                            </em>
+                        </h5>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
 
-        <footer class="bg-transparent fixed-bottom container">
-            <small class="d-block text-muted text-center">
-                <i class="fas fa-code fa-1x"></i> with a lot of <i class="fas fa-mug-hot fa-1x"></i> by <span class="text-bold">João Victor</span>
+        <footer class="fixed-bottom container mb-2">
+            <small class="d-block text-center">
+                <div class="highlight">
+                    <span>
+                        <i class="fas fa-code fa-1x"></i> with a lot of <i class="fas fa-mug-hot fa-1x"></i> by me.
+                    </span>
+                </div>
             </small>
-            <div class="d-block my-2 text-center">
-                <a class="mr-1" title="@jvictor0205" href="https://github.com/jvictor0205"><i class="fab fa-github fa-1x"></i></a>
-                <a class="mr-1" title="@joao-victor-estatistico" href="https://www.linkedin.com/in/joao-victor-estatistico/"><i class="fab fa-linkedin-in fa-1x"></i></a>
-                <a class="mr-1" title="j.victor0205@gmail.com" href="mailto:j.victor0205@gmail.com"><i class="fas fa-at fa-1x"></i></a>
-                <a class="mr-1" title="@jvictorrodrig" href="https://www.instagram.com/jvictorrodrig/"><i class="fab fa-instagram fa-1x"></i></a>
-                <a class="mr-1" title="@jvictor0205" href="https://dev.to/jvictor0205"><i class="fab fa-dev fa-1x"></i></a>
-                <a href="https://codepen.io/jvictor0205" title="@jvictor0205"><i class="fab fa-codepen fa-1x"></i></a>
-            </div>
         </footer>
-
-        <script src="js/script.js"></script>
-
-        <!-- Bootstrap javaScript -->
-        <script src="vendor/jquery/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="vendor/popper/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="vendor/bootstrap4/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+        
     </body>
+
+    <!-- Fontawesome -->
+    <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" data-auto-replace-svg="nest"></script>
+    
+
 </html>

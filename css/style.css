@@ -1,0 +1,171 @@
+/* CONFIGURAÇÕES DA PÁGINA */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Rubik', sans-serif !important;
+    font-weight: 300;
+    color: #fff !important;
+    background-color: #0D0E10 !important;
+    /* overflow-y: hidden; */
+}
+
+/* Underline From Left */
+.hvr-underline {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+.hvr-underline:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #C6FF00;
+    height: 2px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.hvr-underline:hover:before, .hvr-underline:focus:before, .hvr-underline:active:before {
+    right: 0;
+}
+
+/* Images */
+.profile-img {
+    width: 200px;
+    height: auto;
+}
+
+.img-border {
+    height: 180px;
+    width: 170px;
+    border: 1px solid rgba(198, 255, 0, 1);
+    margin: 0 auto;
+    border-radius: 50%;
+    /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); */
+}
+
+/* ----------- START colors and text styles */
+.col1 {
+    color: #C6FF00;
+}
+
+.col2 {
+    color: #FEFFFA !important;
+}
+
+.col3 {
+    color: #0D0E10;
+}
+
+.col4 {
+    color: #000;
+}
+
+.bg-col1{
+    background-color: #C6FF00 !important;
+}
+
+.bg-col2 {
+    background-color: #FEFFFA !important;
+}
+
+.bg-col3 {
+    background-color: #0D0E10 !important;
+}
+
+.bg-col4 {
+    background-color: #000 !important;
+}
+
+div.highlight span {
+    background-color: #FEFFFA;
+    color: #1d1d1e;
+    border-radius: 10px;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    padding: 0 5px 0 5px;
+}
+
+/* ----------- END colors and text styles */
+
+
+/* Links */
+#subtitle > a, #welcome-resume > a  {
+    text-decoration: none !important;
+    color: #C6FF00 !important;
+}
+
+.card-block > a {
+    text-decoration: none !important;
+    color: #FEFFFA !important;
+}
+
+a:active {
+    color: #C6FF00 !important;
+}
+
+#contact-me > a:hover {
+    color: #C6FF00 !important;
+}
+
+/* List changes */
+ul {
+    list-style-type: none;
+}
+
+.text-bold {
+    font-weight: bold !important;
+}
+
+.centerAlign {
+    position: absolute;
+}
+
+/* ----------- START Card styles */
+.card {
+    width: 18rem; 
+    border-radius: 18px !important; 
+    overflow: hidden;
+    transition: transform .2s !important; /* Animation */
+}
+
+.card:hover {
+    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.img-card {
+    width: 18rem;
+    height: 8rem;
+    display:block;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-img-bottom > img {
+    width: 1rem;
+    height: auto;
+}
+/* ----------- END Card styles */
+
+/* navbar colors and changes */
+/* .navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+    color: #00dea6;
+} */
