@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "style": 1,
+        "ref_link": "https://calculadora-amostral.onrender.com/",
+        "title": "Sample and Margin Calculator",
+        "subtitle": "A tool that allows users to find sample and margin of error.",
+        "tech_icons": [
+            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+        ]
+
+    },
+    {
+        "id": 3,
+        "style": 1,
+        "ref_link": "https://calculadora-amostral.onrender.com/",
+        "title": "Sample and Margin Calculator",
+        "subtitle": "A tool that allows users to find sample and margin of error.",
+        "tech_icons": [
+            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+        ]
+
+    }
+]
