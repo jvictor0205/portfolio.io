@@ -9,7 +9,7 @@
 }
 
 .darkmode {
-    --base-color: #070b1d;
+    --base-color: #151418;
     --base-variant: #101425;
     --text-color: white;
     --secondary-text: #a4a5b8;
@@ -18,8 +18,9 @@
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -61,17 +62,25 @@ body {
 
 /* Images */
 .profile-img {
-    width: 200px;
+    width: 340px;
     height: auto;
+    background-color: var(--accent-color);
 }
 
 .img-border {
-    height: 180px;
-    width: 170px;
-    border: 1px solid var(--accent-color);
+    height: 340px;
+    width: auto;
+    border: 1px solid var(--text-color);
     margin: 0 auto;
     border-radius: 50%;
-    /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); */
+}
+
+.about-img-border {
+    height: 170px;
+    width: auto;
+    border: 1px solid var(--text-color);
+    margin: 0 auto;
+    border-radius: 50%;
 }
 
 /* ----------- START colors and text styles */
@@ -122,9 +131,13 @@ a:active {
     color: var(--accent-color) !important;
 }
 
-#contact-me > a:hover {
+a > i:hover {
     color: var(--accent-color) !important;
 }
+
+/* a:hover {
+    color: var(--accent-color) !important;
+} */
 
 /* List changes */
 ul {
@@ -188,7 +201,7 @@ button {
     padding: 0;
     margin: 2x 0;
     border-radius: 50%;
-    background-color: var(--base-variant);
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -198,4 +211,48 @@ button {
 }
 #theme-switch svg{
     fill: var(--primary-color);
+}
+
+.centerFlex {
+    /* position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; */
+    align-items: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    border-color: coral !important;
+}
+
+/* .container {
+    position: relative;
+    height: 400px;
+    border: 2px solid #006100;
+} */
+
+.centered-element {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 2px solid #006100; */
+}
+
+.line-1 {
+    width: 70px;
+    height: 2px;
+    background: var(--accent-color);
+    margin: 8px 0;
+}
+
+.border-1 {
+    border: 1px solid #006100;
+}
+
+.pattern {
+    background-image: repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px);
+    background-size: 4px 4px;
 }
