@@ -22,7 +22,7 @@
                 </a>
 
                 <div class="d-flex" id="buttons">
-                    <button class="ms-2" id="theme-switch" title="Lumos | Nox">
+                    <button class="ms-2" id="theme-switch" title="Lumos or Nox?">
                         <i id="icon-darkmode" class="fas fa-moon fa-1x"></i>
                         <!-- <i class="fas fa-sun fa-1x"></i> -->
                     </button>
@@ -35,36 +35,30 @@
                 <div class="collapse navbar-collapse" id="nav-menu-top">
                     <ul class="navbar-nav mr-auto ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link hvr-underline" href="about-me.html">About me</a>
+                            <a class="nav-link hvr-underline" href="#about-me">About me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link hvr-underline" href="projects-section.html">Study projects</a>
+                            <a class="nav-link hvr-underline" href="#projects">Study projects</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
 
-        <div id="presentation-section" class="container mt-5 centered-element">
-            <div class="row d-flex justify-content-center ">
-                <div class="col-md-3 my-auto">
+        <div id="presentation-section" class="mt-1 ">
+            <div class="row d-flex justify-content-center my-5 py-5">
+                <div class="col-md-3 my-auto py-5 my-5 col-sm-6">
                     <div class="d-flex flex-column justify-content-center align-items-center ">
                         <img src="./img/perfil.png" alt="Me" class="profile-img rounded-circle img-border">
                     </div>
                 </div>
-                <div class="col-6 my-auto ms-2 ">
+
+                <div class="col-6 my-auto ms-2">
                     <div class="container">
                         <h1 class="pt-4 text-bold">Hi! I am João <span>Victor</span>,</h1>
-                        <h4>a <span class="text-bold">Data Scientist</span> and <span class="text-bold">Statistician</span> based in sunny <a href="https://maps.app.goo.gl/ywzrVWnMcnk6DYYd7">Piauí, Brazil</a>.</h4>
-                        <!-- <h5 class="mt-3">
-                            <i class="fas fa-quote-left fa-2x"></i>
-                            <em class="text-justify" id="welcome-resume">
-                                I hold a degree in Statistics from <a href="https://www.ufpi.br/">UFPI</a> and a postgraduate qualification from <a href="https://faveni.edu.br/">FAVENI</a>, with registration at <a href="http://conre5.org.br/">CONRE 5</a> (Conselho Regional de Estatística). 
-                                My work involves research management, statistical modeling, time series analysis, indicator development, and creating AI algorithms using R and Python. 
-                                My passion for programming led me to transition into Data Science, where I continually learn new technologies. 
-                                Connect with me on social media—let's stay connected!
-                            </em>
-                        </h5> -->
+                        <h4>a 
+                            <!-- <span class="text-bold">Data Scientist</span> and  -->
+                            <span class="text-bold">Statistician</span> based in sunny <a href="https://maps.app.goo.gl/ywzrVWnMcnk6DYYd7">Piauí, Brazil</a>.</h4>
                         <div class="line-1"></div>
                         <div class="d-flex mt-3" id="contact-me">
                             <a class="me-2" title="Github" href="https://github.com/joaovictor-aragao"><i class="fab fa-github fa-1x"></i></a>
@@ -76,8 +70,141 @@
                 </div>
             </div>
         </div>
+        
+        <div id="about-me" class="my-5">
 
-        <footer class="bg-transparent fixed-bottom container">
+            <div class="text-center pt-2">
+                <h4><span class="text-bold">About me</span></h4>
+                <p>A resume about my habilities and progress in carreer.</p>
+            </div>
+
+            <div class="d-flex justify-content-center pb-5">
+                <div class="col-8 my-auto ms-2">
+                    <div class="container">
+                        <h5 class="mt-3">
+                            <i class="fas fa-quote-left fa-2x"></i>
+                            <em class="text-justify" id="welcome-resume">
+                                I hold a degree in Statistics from <a href="https://www.ufpi.br/">UFPI</a> and a postgraduate qualification from <a href="https://faveni.edu.br/">FAVENI</a>, with registration at <a href="http://conre5.org.br/">CONRE 5</a> (Conselho Regional de Estatística). 
+                                My work involves research management, statistical modeling, time series analysis, indicator development, and creating AI algorithms using R and Python. 
+                                My passion for programming led me to transition into Data Science, where I continually learn new technologies. 
+                                Connect with me and may the force be with you!
+                            </em>
+                        </h5>
+                        <div class="line-1"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="projects" class="">
+            <div class="text-center">
+                <h4><span class="text-bold">Study Projects</span></h4>
+                <p>Projects and challenges to solidify skills and make everyday life easier.</p>
+            </div>
+
+            <div id="presentation-section" class="container mt-5">
+                <div class="col">
+
+                    <div class="row justify-content-start">
+                        <div class="card border-0 rounded-0 bg-transparent mt-5 pb-5" style="max-width: 70%;">
+                            <!-- <a href="https://calculadora-amostral.onrender.com/"> -->
+                                <div class="row g-0 ms-5 ps-5">
+                                    <div class="col pr-2">
+                                        <img src="img/card-01-calculadora.gif" class="card-img-top img-card h-100 rounded-0" alt="...">
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Sample and Margin Calculator</h5>
+                                            <p class="card-text">An app built to allows users to input sample data and confidence levels, then dynamically calculates the margin of error and sample statistics, displaying the results in a responsive and user-friendly interface.</p>
+                                            <a href="http://calculadora-amostral.onrender.com" class="btn btn-primary">Try it!</a>
+                                            <a href="https://github.com/joaovictor-aragao/calculadora-amostral" class="btn btn-primary-outline">Code</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            <!-- </a> -->
+                        </div>
+                    </div>
+                    
+                    <div class="row justify-content-end">
+                        <div class="card border-0 rounded-0 bg-transparent mt-5 pb-5" style="max-width: 70%;">
+                            <div class="card-block">
+                                <a href="https://github.com/joaovictor-aragao/jira-team-dashboard"></a>
+                            <div class="row g-0 me-5 pe-5">
+                                <div class="col-lg-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Jira Sprint Dashboard</h5>
+                                        <p class="card-text">Retrieve all the tasks associated with the current sprint from the Jira Atlassian API, ensuring to include relevant details such as task status, assignee, priority, and estimated completion time. After gathering this information, design and create an interactive dashboard to effectively visualize these tasks.</p>
+                                        <a href="https://github.com/joaovictor-aragao/jira-team-dashboard" class="btn btn-primary-outline">Code</a>
+                                    </div>
+                                </div>
+                                <div class="col pr-2 rounded-0">
+                                    <img src="img/card-02-dashboard-jira.png" class="card-img-top img-card h-100" alt="...">
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-start">
+                        <div class="card border-0 rounded-0 bg-transparent mt-5 pb-5" style="max-width: 70%;">
+                                <div class="row g-0 ms-5 ps-5">
+                                    <div class="col pr-2">
+                                        <img src="img/card-03-kpis_binary__models.png" class="card-img-top img-card h-100 rounded-0" alt="...">
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Compare KPI's from Binary ML Models<h5>
+                                            <h6 class="card-text">Predicting Stock Market Close Prices with Streamlit and Binary ML Models.</h6>
+                                            <a href="https://github.com/joaovictor-aragao/calculadora-amostral" class="btn btn-primary-outline">Code</a>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row justify-content-end">
+                        <div class="card border-0 rounded-0 bg-transparent mt-5 pb-5" style="max-width: 70%;">
+                            <div class="card-block">
+                                <a href="https://github.com/joaovictor-aragao/jira-team-dashboard"></a>
+                            <div class="row g-0 me-5 pe-5">
+                                <div class="col-lg-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Fogo Cruzado Dashboard</h5>
+                                        <p class="card-text">Visualization Fogo Cruzado API by using shiny in R for each state.</p>
+                                        <a href="https://github.com/joaovictor-aragao/fogocruzado-dash" class="btn btn-primary-outline">Code</a>
+                                    </div>
+                                </div>
+                                <div class="col pr-2 rounded-0">
+                                    <img src="img/card-04-dashboard-shiny.png" class="card-img-top img-card h-100" alt="...">
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-start">
+                        <div class="card border-0 rounded-0 bg-transparent mt-5 pb-5" style="max-width: 70%;">
+                                <div class="row g-0 ms-5 ps-5">
+                                    <div class="col pr-2">
+                                        <img src="img/card-05-pesqele.jpg" class="card-img-top img-card h-100 rounded-0" alt="...">
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Bot telegram pesqele<h5>
+                                            <h6 class="card-text">Web Scrapping using selenium to return a table with companies and quantite of registered researches.</h6>
+                                            <a href="https://github.com/joaovictor-aragao/pesqele-bot-telegram" class="btn btn-primary-outline">Code</a>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-transparent container">
             <div class="row justify-content-between">
                 <div class="col-4">
                     <i class="fas fa-copyright fa-1x"></i> 2023 All rights reserved.

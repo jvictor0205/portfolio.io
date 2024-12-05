@@ -160,39 +160,59 @@ ul {
     transition: transform .2s !important; /* Animation */
 }
 
-.card:hover {
-    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
+/* .card:hover {
+    transform: scale(1.05);
+} */
 
 .img-card {
     width: 18rem;
-    height: 8rem;
-    display:block;
+    height: 18rem;
+    display: block;
     overflow: hidden;
     object-fit: cover;
 }
 
-.card-title {
-    font-weight: bold;
+.card-text {
+    color: var(--text-color);
 }
 
-.card-img-bottom > img {
-    width: 1rem;
-    height: auto;
+.card-title {
+    color: var(--text-color) !important;
+    font-weight: bold;
 }
 /* ----------- END Card styles */
 
 /* Buttons */
-button {
-    border: none;
+.btn-primary {
+    border: none !important;
     padding: .8em 2em;
-    background-color: var(--primary-color);
-    color: white;
-    border-radius: 4px;
-    font: inherit;
-    text-transform: uppercase;
-    font-weight: 500;
-    cursor: pointer;
+    background-color: var(--accent-color) !important;
+    color: white !important;
+    border-radius: 4px !important;
+    font: inherit !important;
+    font-weight: 500 !important;
+    cursor: pointer !important
+}
+
+.btn-primary-outline {
+    /* border: none !important; */
+    padding: .8em 2em;
+    background-color: transparent !important;
+    border-color: var(--accent-color) !important;
+    color: var(--text-color) !important;
+    border-radius: 4px !important;
+    font: inherit !important;
+    font-weight: 500 !important;
+    cursor: pointer !important
+}
+
+.btn-primary:hover {
+    background-color: #025f57 !important;
+}
+
+.btn-primary-outline:hover {
+    background-color: var(--accent-color) !important;
+    color: #fff !important;
 }
 
 #theme-switch {
@@ -209,6 +229,7 @@ button {
     top: 20px;
     right: 20px;
 }
+
 #theme-switch svg{
     fill: var(--primary-color);
 }
