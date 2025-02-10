@@ -99,6 +99,10 @@ ul {
 /* ----------- END Lists */
 
 /* ----------- START Links styling */
+.btn-outline-light:hover svg {
+    fill: black; /* Change icon color to black on hover */
+}
+
 a {
     text-decoration: none !important;
     color: white !important;

@@ -50,24 +50,26 @@
       </nav>
     </header>
     <div id="presentation-section" class="mt-1">
-      <div class="row justify-content-center align-items-center text-center my-5 py-5">
-        <!-- Imagem de perfil -->
-        <div class="col-12 col-md-4 d-flex justify-content-center">
-          <img src="./img/profile2.png" alt="Me" class="profile-img img-border img-fluid" />
-        </div>
-        <!-- Informações -->
-        <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
-          <h1 class="pt-4 fw-bold">Hi! I am João <span>Victor</span>,</h1>
-          <h4>
-            a <span class="fw-bold">Statistician</span> based in sunny 
-            <a href="https://maps.app.goo.gl/ywzrVWnMcnk6DYYd7">Piauí, Brazil</a>.
-          </h4>
-          <div class="line-1 my-3"></div>
-          <div class="d-flex justify-content-center mt-3" id="contact-me">
-            <a class="me-3" title="Github" href="https://github.com/joaovictor-aragao"><i class="fab fa-github fa-lg"></i></a>
-            <a class="me-3" title="LinkedIn" href="https://www.linkedin.com/in/joao-victor-estatistico/"><i class="fab fa-linkedin-in fa-lg"></i></a>
-            <a class="me-3" title="Email" href="mailto:j.victor0205@gmail.com"><i class="fas fa-at fa-lg"></i></a>
-            <a class="me-3" title="Whatsapp" href="https://wa.me/5586994929482"><i class="fab fa-whatsapp fa-lg"></i></a>
+      <div class="container">
+        <div class="row justify-content-center align-items-center text-center my-5 py-5">
+          <!-- Imagem de perfil -->
+          <div class="col-12 col-md-4 d-flex justify-content-center">
+            <img src="./img/profile2.png" alt="Me" class="profile-img img-border img-fluid" />
+          </div>
+          <!-- Informações -->
+          <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+            <h1 class="pt-4 fw-bold">Hi! I am João <span>Victor</span>,</h1>
+            <h4>
+              a <span class="fw-bold">Statistician</span> based in sunny 
+              <a href="https://maps.app.goo.gl/ywzrVWnMcnk6DYYd7">Piauí, Brazil</a>.
+            </h4>
+            <div class="line-1 my-3"></div>
+            <div class="d-flex justify-content-center mt-3" id="contact-me">
+              <a class="me-3" title="Github" href="https://github.com/joaovictor-aragao"><i class="fab fa-github fa-lg"></i></a>
+              <a class="me-3" title="LinkedIn" href="https://www.linkedin.com/in/joao-victor-estatistico/"><i class="fab fa-linkedin-in fa-lg"></i></a>
+              <a class="me-3" title="Email" href="mailto:j.victor0205@gmail.com"><i class="fas fa-at fa-lg"></i></a>
+              <a class="me-3" title="Whatsapp" href="https://wa.me/5586994929482"><i class="fab fa-whatsapp fa-lg"></i></a>
+            </div>
           </div>
         </div>
       </div>
@@ -80,7 +82,8 @@
         <p>A resume about my abilities and progress in my career.</p>
       </div>
       
-      <!-- Conteúdo principal -->
+      <div class="container">
+        <!-- Conteúdo principal -->
       <div class="row justify-content-center align-items-center my-5 py-5">
         <!-- Texto -->
         <div class="col-12 col-md-6">
@@ -104,8 +107,10 @@
           <img src="./img/about-me.png" alt="Me" class="img-fluid img-about" />
         </div>
       </div>
+      </div>
     </div>
     
+    <!-- Projects -->
     <div id="projects" class="mt-5">
       <div class="container pt-4">
         <div class="row justify-content-center mb-3">
@@ -119,128 +124,154 @@
             </div>
           </div>
         </div>
-        <div class="row g-3">
-          <div class="col-lg-6">
-            <div class="portfolio-box">
-              <!-- Imagem -->
-              <div class="portfolio-img">
-                <img
-                  src="/img/card-05-EDA.png"
-                  alt="portfolio"
-                  class="img-fluid"
-                />
+        
+        <div class="container">
+          <div class="row justify-content-center">
+            <!-- Card 01 -->
+            <div class="col-lg-5 m-3 card border-0 shadow-lg rounded-4 bg-dark text-white" style="max-width: 80%;">
+              <!-- Image -->
+              <div class="position-relative overflow-hidden rounded pt-3">
+                  <img src="/img/card-01-calculadora.gif" alt="Sample and Margin Calculator" class="card-img-top img-fluid">
               </div>
-              <!-- Informações -->
-              <div class="portfolio-info">
-                <h2 class="mb-2">Differentiated Thyroid Cancer Recurrence EDA Project</h2>
-                <p class="mb-2">
-                  Analyze the Differentiated Thyroid Cancer Recurrence dataset using Exploratory Data Analysis (EDA) and build PREDICT interface models to classify whether cancer.
-                </p>
-                <a href="https://thyroid-cancer-recurrence.onrender.com/">
-                  <div class="nav"><span>Try it</span></div>
-                </a>
+              <!-- Card Body -->
+              <div class="card-body d-flex justify-content-between align-items-center">
+                  <div>
+                      <h4 class="fw-bold mb-1">Sample and Margin Calculator</h4>
+                      <span class="text-light">An Web App built to allows users to calculate samples and errors.</span>
+                  </div>
+                  <div class="d-flex gap-2">
+                      <!-- GitHub Button -->
+                      <a href="https://github.com/joaovictor-aragao/calculadora-amostral" target="_blank" class="btn btn-outline-light rounded p-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                              <path d="M24 12L18.3431 17.6569L16.9289 16.2426L21.1716 12L16.9289 7.75736L18.3431 6.34315L24 12ZM2.82843 12L7.07107 16.2426L5.65685 17.6569L0 12L5.65685 6.34315L7.07107 7.75736L2.82843 12ZM9.78845 21H7.66009L14.2116 3H16.3399L9.78845 21Z"></path>
+                          </svg>
+                      </a>
+                      <!-- Live Preview Button -->
+                      <a href="https://calculadora-amostral.onrender.com" target="_blank" class="btn btn-outline-light rounded p-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                              <path d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"></path>
+                          </svg>
+                      </a>
+                  </div>
+              </div>
+            </div>
+
+            <!-- Card 02 -->
+            <div class="col-lg-5 m-3 card border-0 shadow-lg rounded-4 bg-dark text-white" style="max-width: 80%;">
+              <!-- Image -->
+              <div class="position-relative overflow-hidden rounded pt-3">
+                  <img src="/img/card-05-EDA.png" alt="Sample and Margin Calculator" class="card-img-top img-fluid">
+              </div>
+              <!-- Card Body -->
+              <div class="card-body d-flex justify-content-between align-items-center">
+                  <div>
+                      <h4 class="fw-bold mb-1">Differentiated Thyroid Cancer Recurrence EDA Project</h4>
+                      <span class="text-light">
+                      Analyze the Differentiated Thyroid Cancer Recurrence dataset using Exploratory Data Analysis (EDA) and build PREDICT interface models to classify whether cancer.
+                      </span>
+                  </div>
+                  <div class="d-flex gap-2">
+                      <!-- GitHub Button -->
+                      <a href="https://github.com/joaovictor-aragao/thyroid-cancer-recurrence" target="_blank" class="btn btn-outline-light rounded p-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                              <path d="M24 12L18.3431 17.6569L16.9289 16.2426L21.1716 12L16.9289 7.75736L18.3431 6.34315L24 12ZM2.82843 12L7.07107 16.2426L5.65685 17.6569L0 12L5.65685 6.34315L7.07107 7.75736L2.82843 12ZM9.78845 21H7.66009L14.2116 3H16.3399L9.78845 21Z"></path>
+                          </svg>
+                      </a>
+                      <!-- Live Preview Button -->
+                      <a href="https://thyroid-cancer-recurrence.onrender.com" target="_blank" class="btn btn-outline-light rounded p-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                              <path d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"></path>
+                          </svg>
+                      </a>
+                  </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="portfolio-box">
-              <!-- Imagem -->
-              <div class="portfolio-img">
-                <img
-                  src="/img/card-01-calculadora.gif"
-                  alt="portfolio"
-                  class="img-fluid"
-                />
+
+          <div class="row justify-content-center">
+            <!-- Card 03 -->
+            <div class="col-lg-5 m-3 card border-0 shadow-lg rounded-4 bg-dark text-white" style="max-width: 80%;">
+              <!-- Image -->
+              <div class="position-relative overflow-hidden rounded pt-3">
+                  <img src="/img/card-02-dashboard-jira.png" alt="Sample and Margin Calculator" class="card-img-top img-fluid">
               </div>
-              <!-- Informações -->
-              <div class="portfolio-info">
-                <h2 class="mb-2">Sample and Margin Calculator</h2>
-                <p class="mb-2">
-                  An Web App built to allows users to calculate samples and
-                  errors.
-                </p>
-                <a href="https://calculadora-amostral.onrender.com/">
-                  <div class="nav"><span>Try it</span></div>
-                </a>
+              <!-- Card Body -->
+              <div class="card-body d-flex justify-content-between align-items-center">
+                  <div>
+                      <h4 class="fw-bold mb-1">Jira Sprint Dashboard</h4>
+                      <span class="text-light">
+                        Retrieve all the tasks associated with the current sprint from
+                        the Jira Atlassian API, ensuring to include relevant details
+                        such as task status, assignee, priority, and estimated
+                        completion time.
+                      </span>
+                  </div>
+                  <div class="d-flex gap-2">
+                      <!-- GitHub Button -->
+                      <a href="https://github.com/joaovictor-aragao/calculadora-amostral" target="_blank" class="btn btn-outline-light rounded p-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                              <path d="M24 12L18.3431 17.6569L16.9289 16.2426L21.1716 12L16.9289 7.75736L18.3431 6.34315L24 12ZM2.82843 12L7.07107 16.2426L5.65685 17.6569L0 12L5.65685 6.34315L7.07107 7.75736L2.82843 12ZM9.78845 21H7.66009L14.2116 3H16.3399L9.78845 21Z"></path>
+                          </svg>
+                      </a>
+                  </div>
+              </div>
+            </div>
+
+            <!-- Card 04 -->
+            <div class="col-lg-5 m-3 card border-0 shadow-lg rounded-4 bg-dark text-white" style="max-width: 80%;">
+              <!-- Image -->
+              <div class="position-relative overflow-hidden rounded pt-3">
+                  <img src="/img/card-03-kpis_binary__models.png" alt="Sample and Margin Calculator" class="card-img-top img-fluid">
+              </div>
+              <!-- Card Body -->
+              <div class="card-body d-flex justify-content-between align-items-center">
+                  <div>
+                      <h4 class="fw-bold mb-1">Compare KPI's from Binary ML Models</h4>
+                      <span class="text-light">
+                        Predicting Stock Market Close Prices with Streamlit and Binary ML Models.
+                      </span>
+                  </div>
+                  <div class="d-flex gap-2">
+                      <!-- GitHub Button -->
+                      <a href="https://github.com/joaovictor-aragao/stock-market-predict" target="_blank" class="btn btn-outline-light rounded p-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                              <path d="M24 12L18.3431 17.6569L16.9289 16.2426L21.1716 12L16.9289 7.75736L18.3431 6.34315L24 12ZM2.82843 12L7.07107 16.2426L5.65685 17.6569L0 12L5.65685 6.34315L7.07107 7.75736L2.82843 12ZM9.78845 21H7.66009L14.2116 3H16.3399L9.78845 21Z"></path>
+                          </svg>
+                        </a>
+                  </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="portfolio-box">
-              <!-- Imagem -->
-              <div class="portfolio-img">
-                <img
-                  src="/img/card-02-dashboard-jira.png"
-                  alt="portfolio"
-                  class="img-fluid"
-                />
+
+          <div class="row justify-content-center">
+            <!-- Card 05 -->
+            <div class="col-lg-5 m-3 card border-0 shadow-lg rounded-4 bg-dark text-white" style="max-width: 80%;">
+              <!-- Image -->
+              <div class="position-relative overflow-hidden rounded pt-3">
+                  <img src="/img/card-04-dashboard-shiny.png" alt="Sample and Margin Calculator" class="card-img-top img-fluid">
               </div>
-              <!-- Informações -->
-              <div class="portfolio-info">
-                <h2 class="mb-2">Jira Sprint Dashboard</h2>
-                <p class="mb-2">
-                  Retrieve all the tasks associated with the current sprint from
-                  the Jira Atlassian API, ensuring to include relevant details
-                  such as task status, assignee, priority, and estimated
-                  completion time.
-                </p>
-                <a
-                  href="https://github.com/joaovictor-aragao/jira-team-dashboard"
-                >
-                  <div class="nav"><span>Code</span></div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="portfolio-box">
-              <!-- Imagem -->
-              <div class="portfolio-img">
-                <img
-                  src="/img/card-03-kpis_binary__models.png"
-                  alt="portfolio"
-                  class="img-fluid"
-                />
-              </div>
-              <!-- Informações -->
-              <div class="portfolio-info">
-                <h2 class="mb-2">Compare KPI's from Binary ML Models</h2>
-                <p class="mb-2">
-                  Predicting Stock Market Close Prices with Streamlit and Binary
-                  ML Models.
-                </p>
-                <a
-                  href="https://github.com/joaovictor-aragao/stock-market-predict"
-                >
-                  <div class="nav"><span>Code</span></div>
-                </a>
+              <!-- Card Body -->
+              <div class="card-body d-flex justify-content-between align-items-center">
+                  <div>
+                      <h4 class="fw-bold mb-1">Fogo Cruzado Dashboard</h4>
+                      <span class="text-light">
+                        Visualization Fogo Cruzado API by using shiny in R for each state.
+                      </span>
+                  </div>
+                  <div class="d-flex gap-2">
+                      <!-- GitHub Button -->
+                      <a href="https://github.com/joaovictor-aragao/fogocruzado-dash" target="_blank" class="btn btn-outline-light rounded p-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                              <path d="M24 12L18.3431 17.6569L16.9289 16.2426L21.1716 12L16.9289 7.75736L18.3431 6.34315L24 12ZM2.82843 12L7.07107 16.2426L5.65685 17.6569L0 12L5.65685 6.34315L7.07107 7.75736L2.82843 12ZM9.78845 21H7.66009L14.2116 3H16.3399L9.78845 21Z"></path>
+                          </svg>
+                      </a>
+                  </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="portfolio-box">
-              <!-- Imagem -->
-              <div class="portfolio-img">
-                <img
-                  src="/img/card-04-dashboard-shiny.png"
-                  alt="portfolio"
-                  class="img-fluid"
-                />
-              </div>
-              <!-- Informações -->
-              <div class="portfolio-info">
-                <h2 class="mb-2">Fogo Cruzado Dashboard</h2>
-                <p class="mb-2">
-                  Visualization Fogo Cruzado API by using shiny in R for each
-                  state.
-                </p>
-                <a href="https://github.com/joaovictor-aragao/fogocruzado-dash">
-                  <div class="nav"><span>Code</span></div>
-                </a>
-              </div>
-            </div>
-          </div>
+
         </div>
+
       </div>
     </div>
 
