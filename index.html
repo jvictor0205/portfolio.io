@@ -27,26 +27,24 @@
         <a class="navbar-brand text-uppercase hvr-underline" href="index.html">
             <i class="fas fa-terminal"></i> João Victor
         </a>
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-        >
+        
+        <div class="switch">
+          <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+          <label for="language-toggle"></label>
+          <span class="on">EN</span>
+          <span class="off">BR</span>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mr-auto ms-auto">
             <li class="nav-item">
-              <a class="nav-link hvr-underline" href="#about-me">About me</a>
+              <a class="nav-link hvr-underline" data-i18n="navAbout" href="#about-me">About me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link hvr-underline" href="#projects"
-                >Study projects</a
-              >
+              <a class="nav-link hvr-underline" data-i18n="navStudies" href="#projects">Study projects</a>
             </li>
           </ul>
         </div>
@@ -61,11 +59,16 @@
           </div>
           <!-- Informações -->
           <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
-            <h1 class="pt-4 fw-bold">Hi! I am João <span>Victor</span>,</h1>
-            <h4>
-              a <span class="fw-bold">Statistician</span> based in sunny 
-              <a href="https://maps.app.goo.gl/ywzrVWnMcnk6DYYd7">Piauí, Brazil</a>.
+            <h1 class="pt-4 fw-bold" id="title">
+              <span data-i18n="greeting" class="text-light">Hi! I am João</span> <span data-i18n="name">Victor</span>,
+            </h1>
+            <h4 id="description">
+              <span data-i18n="profession">a <span class="fw-bold">Statistician</span></span> 
+              <span data-i18n="location" class="text-light">based in sunny 
+                <a href="https://maps.app.goo.gl/ywzrVWnMcnk6DYYd7">Piauí, Brazil.</a>
+              </span>
             </h4>
+          
             <div class="line-1 my-3"></div>
             <div class="d-flex justify-content-center mt-3" id="contact-me">
               <a class="me-3" title="Github" href="https://github.com/joaovictor-aragao"><i class="fab fa-github fa-lg"></i></a>
@@ -81,8 +84,8 @@
     <div id="about-me" class="my-5 bg-white">
       <!-- Título e descrição -->
       <div class="text-center pt-4">
-        <h4><span class="fw-bold">About me</span></h4>
-        <p>A resume about my abilities and progress in my career.</p>
+        <h4><span class="fw-bold" data-i18n="navAbout">About me</span></h4>
+        <p data-i18n="resumeAbout">A resume about my abilities and progress in my career.</p>
       </div>
       
       <div class="container">
@@ -91,22 +94,15 @@
         <!-- Texto -->
         <div class="col-12 col-md-6">
           <div>
-            <h5 class="text-justify text-indent" id="welcome-resume">
-              Statistician graduated from 
-              <a href="https://www.ufpi.br/">UFPI</a>, with extensive experience 
-              in creating and implementing analytical solutions for complex business challenges, 
-              ranging from large-scale data storage to statistical modeling, risk analysis, and machine learning. 
-              I have a profile focused on results, with the ability to translate data into insights 
-              through detailed and well-structured reports. My expertise includes mastery of languages 
-              such as R, Python, SQL, and Elasticsearch, combined with the ability to manage internal 
-              and external analyses, ensuring accuracy and efficiency in high-impact projects.
+            <h5 class="text-justify text-indent" data-i18n="welcome">
+              Statistician graduated from UFPI, with extensive experience in creating and implementing analytical solutions for
+              complex business challenges, ranging from large-scale data storage to statistical modeling, risk analysis, and machine learning. I have a profile
+              focused on results, with the ability to translate data into insights through detailed and well-structured reports.
+              My expertise includes mastery of languages such as R, Python, SQL, and Elasticsearch, combined with the ability to manage internal and external
+              analyses, ensuring accuracy and efficiency in high-impact projects.
             </h5>
             <div class="line-1 my-3"></div>  
             
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" width="7%"/>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" width="7%"/> 
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="7%"/>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" width="7%"/>
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" width="7%"/>
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/r/r-original.svg" width="7%"/>
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original-wordmark.svg" width="7%"/>  
@@ -114,6 +110,10 @@
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" width="7%"/>
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original-wordmark.svg" width="7%"/>
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" width="7%"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" width="7%"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" width="7%"/> 
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="7%"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" width="7%"/>
           
           </div>
         </div>
@@ -132,11 +132,8 @@
         <div class="row justify-content-center mb-3">
           <div class="col-lg-6 text-center">
             <div class="section-title">
-              <h4><span class="text-bold">Study projects</span></h4>
-              <p>
-                Projects and challenges to solidify skills and make everyday
-                life easier.
-              </p>
+              <h4><span class="text-bold" data-i18n="navStudies">Study projects</span></h4>
+              <p data-i18n="resumeStudy">Projects and challenges to solidify skills and make everyday life easier.</p>
             </div>
           </div>
         </div>
@@ -294,13 +291,13 @@
     <footer class="pt-5">
       <div class="container">
         <div class="row justify-content-between">
-          <div class="col-4">
+          <div class="col-4" data-i18n="reserved">
             <i class="fas fa-copyright fa-1x"></i> 2025 All rights reserved.
           </div>
-          <div class="col-4 text-end">
+          <div class="col-4 text-end" data-i18n="coffeeBottom">
             <i class="fas fa-code fa-1x"></i> with a lot of
             <i class="fas fa-mug-hot fa-1x"></i> by
-            <span class="text-bold">Me</span>
+            <span class="text-bold">Me.</span>
           </div>
         </div>
       </div>
