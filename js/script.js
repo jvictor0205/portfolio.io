@@ -96,3 +96,24 @@ toggle.addEventListener("change", () => {
         )
     }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const aboutMeSection = document.querySelector("#about-me");
+    const titleElement = aboutMeSection.querySelector("h4");
+    const paragraphElement = aboutMeSection.querySelector("p");
+
+    const observer = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    titleElement.classList.add("animate-title");
+                    paragraphElement.classList.add("animate-title");
+                    observer.unobserve(entry.target); // Para rodar apenas uma vez
+                }
+            });
+        },
+        { threshold: 0.3 } // Ativa quando 30% da seção estiver visível
+    );
+
+    observer.observe(aboutMeSection);
+});
